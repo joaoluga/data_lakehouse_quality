@@ -1,0 +1,15 @@
+src/notebooks/.cache
+src/notebooks/.config
+src/notebooks/.ipynb_checkpoints
+src/notebooks/.ipython
+src/notebooks/.jupyter
+src/notebooks/.local
+src/notebooks/.npm
+src/notebooks/.soda
+src/notebooks/.ivy2
+src/notebooks/.soda
+src/notebooks/layers
+venv/
+.idea
+*.pyc
+.DS_Store

@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  jupyter_lab:
+    image: jupyter/pyspark-notebook:spark-3.3.2
+    container_name: jupyter_lab
+    cpus: 12
+    mem_limit: 12g
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/:rw
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
